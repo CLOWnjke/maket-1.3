@@ -57,6 +57,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: scroll;
+}
+
+.nav-menu::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .nav-menu__icons-link {
@@ -68,12 +74,27 @@ body {
     color: #1B1C21;
 }
 
-.icon-burger {
+.icon-container {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
     margin-left: 16px;
-
 }
 
-.icon-checkstatus {
+.icon-container--burger {
+    margin-left: 16px;
+}
+
+.icon-container--logo {
+    width: 96px;
+    height: 50px;
+}
+
+.icon-container--checkstatus {
     margin-right: 16px;
 }
 
@@ -85,10 +106,13 @@ body {
     border-radius: 2px;
 }
 
-.icons-link--xm,
 .icon-devider--xm {
-    position: absolute;
-    top: -100px;
+    margin-left: 16px;
+    margin-right: 20px;
+}
+
+.icon-devider {
+    margin-left: 16px;
 }
 
 .main {
@@ -259,7 +283,7 @@ body {
         position: static;
     }
 
-    .icon-burger {
+    .icon-container--burger {
         margin-left: 24px;
     }
 
