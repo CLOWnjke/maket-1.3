@@ -389,6 +389,7 @@ body {
     .title-container {
         padding-top: 42px;
         justify-content: space-between;
+        white-space: nowrap;
     }
 
     .title__nav-menu {
@@ -412,8 +413,8 @@ body {
         text-decoration: none;
     }
 
-    .nav-menu__icons-link--btn  {
-        margin-top: 10px;
+    .icon-container--repair {
+        margin-right: 32px;
     }
 
     .icon-repair {
