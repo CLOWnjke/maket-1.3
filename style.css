@@ -57,12 +57,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: scroll;
-}
-
-.nav-menu::-webkit-scrollbar {
-    width: 0;
-    height: 0;
 }
 
 .nav-menu__icons-link {
@@ -78,8 +72,6 @@ body {
     display: flex;
     width: 40px;
     height: 40px;
-    background-color: #FF3E79;
-    border-radius: 50%;
     justify-content: center;
     align-items: center;
     margin-left: 16px;
@@ -87,14 +79,58 @@ body {
 
 .icon-container--burger {
     margin-left: 16px;
+    margin-right: 16px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    background-image: url("icons/burger.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .icon-container--logo {
     width: 96px;
     height: 50px;
+    background-image: url("icons/Group\ \(1\).svg");
+}
+
+.icon-container--call {
+    background-color: #FF3E79;
+    border-radius: 50%;
+    background-image: url("icons/call.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-container--chat {
+    background-color: #FF3E79;
+    border-radius: 50%;
+    background-image: url("icons/chat.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-container--profile {
+    background-color: #FF3E79;
+    border-radius: 50%;
+    background-image: url("icons/Profile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-container--repair {
+    background-color: #FF3E79;
+    border-radius: 50%;
+    background-image: url("icons/repair.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .icon-container--checkstatus {
+    background-color: #FF3E79;
+    border-radius: 50%;
+    background-image: url("icons/checkstatus.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     margin-right: 16px;
 }
 
@@ -107,12 +143,16 @@ body {
 }
 
 .icon-devider--xm {
-    margin-left: 16px;
     margin-right: 20px;
 }
 
 .icon-devider {
     margin-left: 16px;
+}
+
+.icons-link--xm,
+.icon-devider--xm {
+    display: none;
 }
 
 .main {
@@ -168,7 +208,7 @@ body {
     width: 504px;
     height: 40px;
     display: flex;
-
+    white-space: nowrap;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
@@ -204,12 +244,6 @@ body {
     padding-right: 25px;
     padding-top: 8px;
     padding-bottom: 8px;
-}
-
-.btn-xm,
-.btn-xl  {
-    position: absolute;
-    top: -10000px;
 }
 
 .main-content__info {
@@ -280,18 +314,19 @@ body {
 
     .icons-link--xm,
     .icon-devider--xm {
-        position: static;
+        display: flex;
     }
 
     .icon-container--burger {
         margin-left: 24px;
+        margin-right: 20px;
     }
 
-    .icon-checkstatus {
+    .icon-container--checkstatus {
         margin-right: 24px;
     }
 
-    .icon-call {
+    .icon-container--call {
         margin-left: 250px;
     }
 
