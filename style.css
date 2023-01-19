@@ -196,7 +196,6 @@ body {
     overflow-x: scroll;
     margin-left: 16px;
     align-items: center;
-    scrollbar-width: none;
 }
 
 .btn-container::-webkit-scrollbar {
