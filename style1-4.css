@@ -87,7 +87,6 @@ body {
     margin: 0;
     margin-top: 50px;
     padding: 0;
-    line-height: 32px;
     font-family: 'TT Lakes';
     font-size: 16px;
 }
@@ -95,6 +94,7 @@ body {
 .link-menu-active{
     display: flex;
     align-items: center;
+    margin-bottom: 32px;
 }
 
 .hightlight {
@@ -108,6 +108,11 @@ body {
 
 .link {
     margin-left: 24px;
+    margin-bottom: 32px;
+}
+
+.link:last-child {
+    margin-bottom: 0;
 }
 
 .link-menu a,
@@ -185,6 +190,8 @@ body {
 }
 
 .info-number {
+    font-family: 'TT Lakes';
+    font-size: 24px;
     margin-left: 24px;
     margin-bottom: 40px;
     font-size: 24px;
