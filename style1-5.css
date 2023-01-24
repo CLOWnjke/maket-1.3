@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Regular.eot');
+    src: local('fonts/TT Lakes Regular'), local('TTLakes-Regular'),
+        url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Regular.woff') format('woff'),
+        url('fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    color: #7E7E82;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+}
+
+.header__container {
+    height: 80px;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    display: flex;
+    align-items: center;
+}
+
+.header__text {
+    margin: 16px;
+}
+
+.main {
+    background: #F2F2F2;
+}
+
+.btn-slider__btn {
+    margin: 16px 0  0 16px;
+    width: 240px;
+    height: 72px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+
+.btn-slider__btn--brend {
+    width: 40px;
+    height: 40px;
+    margin: 16px;
+    margin-left: 168px;
+    border: 2px solid #FF3E79;
+    border-radius: 20px;
+    background: url('icons/btn--brend.svg') no-repeat 50% 50% #FFFFFF;
+}
+
+.lenovo {
+    background: url('icons/Lenovo.svg') 16px 20px no-repeat #FFFFFF;
+}
+
+.samsung {
+    background: url('icons/samsung.svg') 16px 17px no-repeat #FFFFFF;
+}
+
+.apple {
+    background: url('icons/apple.svg') 16px 12px no-repeat #FFFFFF;
+}
+
+.viewsonic {
+    background: url('icons/ViewSonic.svg') 14px 26px no-repeat #FFFFFF;
+}
+
+.bosch {
+    background: url('icons/bosch.svg') 16px 22px no-repeat #FFFFFF;
+}
+
+.hp {
+    background: url('icons/hp.svg') 10px 10px no-repeat #FFFFFF;
+}
+
+.acer {
+    background: url('icons/acer.svg') 16px 24px no-repeat #FFFFFF;
+}
+
+.sony {
+    background: url('icons/sony.svg') 14px 23px no-repeat #FFFFFF;
+}
+
+.slide--xl {
+    display: none;
+}
+
+.btn-slider {
+    height: 154px;
+}
+
+.btn-container {
+    display: none;
+    margin: 24px 0 0 24px;
+    padding-bottom: 34px;
+}
+
+.main--highlight {
+    width: 24px;
+    height: 24px;
+    background: url('icons/icon.svg') no-repeat 50% 50% ;
+}
+
+.main__btn {
+    font-family: 'TT Lakes';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 9px;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .header__container {
+        height: 56px;
+    }
+
+    .btn-slider,
+    .btn-slider__wrapper,
+    .btn-slider__slide {
+        position: static !important;
+    }
+
+    .btn-slider {
+        height: 100%;
+    }
+
+    .btn-slider__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .btn-slider__slide {
+        box-sizing: border-box;
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .btn-slider__btn {
+        width: 224px;
+        margin: 16px 0  0 24px;
+    }
+
+    .xm {
+        margin-top: 24px;
+    }
+
+
+    .btn-container {
+        display: flex;
+    }
+
+    .disable {
+        display: none;
+    }
+}
+
+@media (min-width: 1120px) {
+    .slide--xl {
+        display: block;
+    }
+
+    .btn-slider__btn,
+    .xl {
+        margin: 24px 0  0 32px;
+    }
+}
