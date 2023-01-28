@@ -97,11 +97,13 @@ body {
 }
 
 .slide--xl {
-    display: none;
+    position: absolute  !important;
+    top: -1000px;
 }
 
 .btn-slider {
     height: 154px;
+    overflow-x: hidden;
 }
 
 .btn-container {
@@ -113,7 +115,11 @@ body {
 .main--highlight {
     width: 24px;
     height: 24px;
-    background: url('icons/icon.svg') no-repeat 50% 50% ;
+    background: url('icons/icon.svg') no-repeat 50% 50%;
+}
+
+.main--highlight--active {
+    transform: scale(-1);
 }
 
 .main__btn {
@@ -123,6 +129,22 @@ body {
     font-size: 16px;
     padding-left: 9px;
     border: none;
+    background: #F2F2F2
+}
+
+.swiper-pagination {
+    top: 183px;
+}
+
+.swiper-pagination-bullet {
+    opacity: 1 !important;
+    background-color: #DDDDDD !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC !important;
 }
 
 @media (min-width: 768px) {
@@ -133,7 +155,7 @@ body {
     .btn-slider,
     .btn-slider__wrapper,
     .btn-slider__slide {
-        position: static !important;
+        position: static;
     }
 
     .btn-slider {
@@ -142,12 +164,19 @@ body {
 
     .btn-slider__wrapper {
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .btn-slider__slide {
         box-sizing: border-box;
         width: auto !important;
         height: auto !important;
+    }
+
+    .btn-slider__slide:nth-child(3),
+    .btn-slider__slide:nth-child(6),
+    .btn-slider__slide:nth-child(11) {
+        margin-right: 24px;
     }
 
     .swiper-pagination {
@@ -163,23 +192,45 @@ body {
         margin-top: 24px;
     }
 
-
     .btn-container {
         display: flex;
     }
 
     .disable {
-        display: none;
+        position: absolute !important;
+        top: -1000px;
     }
 }
 
 @media (min-width: 1120px) {
+    .header__container,
+    .main__container {
+        width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .slide--xl {
-        display: block;
+        position: static !important;
+    }
+
+    .btn-slider__btn{
+        width: 240px;
+        height: 72px;
     }
 
     .btn-slider__btn,
     .xl {
         margin: 24px 0  0 32px;
+    }
+
+    .btn-slider__slide:nth-child(3),
+    .btn-slider__slide:nth-child(6),
+    .btn-slider__slide:nth-child(11) {
+        margin-right: 0;
+    }
+
+    .btn-slider__wrapper {
+        justify-content: start;
     }
 }
