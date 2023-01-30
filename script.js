@@ -58,6 +58,14 @@ button.addEventListener('click', function () {
     for (let i = 0; i < slide.length; i++) {
         slide[i].classList.toggle('disable');
     }
-    button.textContent = (button.textContent === 'Скрыть') ? 'Показать все' : 'Скрыть';
+    
+    button.classList.toggle('btn--active');
+
+    if (button.classList.contains('btn--active')) {
+        button.textContent = 'Скрыть';
+    } else {
+        button.textContent = 'Показать всё';
+    }
+
     highlight.classList.toggle('main--highlight--active');
 });
