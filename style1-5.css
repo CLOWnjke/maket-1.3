@@ -104,6 +104,7 @@ body {
 .btn-slider {
     height: 154px;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .btn-container {
