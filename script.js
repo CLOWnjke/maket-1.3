@@ -1,6 +1,4 @@
-const slider = document.querySelector('.btn-slider');
-
-new Swiper(slider, {
+const slider = new Swiper('.btn-slider', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true
@@ -10,7 +8,7 @@ new Swiper(slider, {
 
         breakpoints: {
             768: {
-              enabled: true,
+              enabled: false,
               slidesPerView: 1,
               speed: 800,
             },

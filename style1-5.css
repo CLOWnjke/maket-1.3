@@ -164,7 +164,10 @@ body {
 
     .btn-slider__wrapper {
         flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
     }
 
     .btn-slider__slide {
@@ -173,19 +176,13 @@ body {
         height: auto !important;
     }
 
-    .btn-slider__slide:nth-child(3),
-    .btn-slider__slide:nth-child(6),
-    .btn-slider__slide:nth-child(11) {
-        margin-right: 24px;
-    }
-
     .swiper-pagination {
         display: none;
     }
 
     .btn-slider__btn {
         width: 224px;
-        margin: 16px 0  0 24px;
+        margin: 24px 0  0 24px;
     }
 
     .xm {
