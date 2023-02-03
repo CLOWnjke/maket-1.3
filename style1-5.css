@@ -149,10 +149,6 @@ body {
 }
 
 @media (min-width: 768px) {
-    .header__container {
-        height: 56px;
-    }
-
     .btn-slider,
     .btn-slider__wrapper,
     .btn-slider__slide {
